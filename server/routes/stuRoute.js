@@ -16,4 +16,7 @@ const StuController=require("../controllers/stuController");
 
 // route.post("/upload",upload.single("myimage"),StuController.myUpload);
 
+route.post("/upload",StuController.stuUpload)
+route.get("/display",StuController.stuDisplay)
+
 module.exports=route;
