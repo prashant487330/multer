@@ -1,7 +1,7 @@
 const express=require("express");
 const route=express.Router();
 const StuController=require("../controllers/stuController");
-// const multer=require("multer");
+const multer=require("multer");
 
 // // Multer storage Configuration
 // const storage=multer.diskStorage({
@@ -16,7 +16,7 @@ const StuController=require("../controllers/stuController");
 
 // route.post("/upload",upload.single("myimage"),StuController.myUpload);
 
-route.post("/upload",StuController.stuUpload)
-route.get("/display",StuController.stuDisplay)
+route.post("/upload", StuController.studata);
+// route.get("/display", StuController.stuDisplay);
 
 module.exports=route;
